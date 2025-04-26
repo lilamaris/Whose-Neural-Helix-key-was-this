@@ -55,7 +55,7 @@
                 <div
                     class="border-base-300 rounded-box flex min-h-[5rem] items-center justify-center border-2 border-dashed"
                 >
-                    <h4 class="text-m text-base-300 text-center">
+                    <h4 class="text-m text-base-300 text-center font-bold">
                         {labels[key.type] ?? key.type} 없어!!
                     </h4>
                 </div>
