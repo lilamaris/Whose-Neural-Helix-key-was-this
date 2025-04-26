@@ -64,7 +64,7 @@
         {#if emptyCount > 0}
             {#each Array(emptyCount) as _}
                 <div
-                    class="rounded-box border-base-300 flex flex-col border-2 border-dashed md:h-[9rem]"
+                    class="rounded-box border-base-300 hidden flex-col border-2 border-dashed md:h-[9rem] lg:flex"
                 ></div>
             {/each}
         {/if}
