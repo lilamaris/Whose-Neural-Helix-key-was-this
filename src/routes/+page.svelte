@@ -123,7 +123,7 @@
                 <!-- Doll Status -->
                 <Collapsible open={false}>
                     <h4 slot="header" class="text-s text-base-content px-4 font-bold">능력치</h4>
-                    <DollStatus doll={$selectedDoll} />
+                    <DollStatus status={$selectedDoll.status} />
                 </Collapsible>
 
                 <!-- Doll Recommend Common Keys -->
