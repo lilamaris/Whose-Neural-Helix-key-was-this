@@ -93,8 +93,8 @@
     {#if navStore.isNavOpen}
         <div
             class="fixed inset-0 z-5 bg-black/50 md:hidden"
-            on:click={() => navStore.set(false)}
-            on:keydown={(e) => {
+            onclick={() => navStore.set(false)}
+            onkeydown={(e) => {
                 if (e.key === "Escape") navStore.set(false);
             }}
             role="button"
