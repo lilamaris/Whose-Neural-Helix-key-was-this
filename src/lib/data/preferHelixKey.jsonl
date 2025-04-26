@@ -1,0 +1,39 @@
+{"id": "jiangyu", "preferCommonKey": ["daiyan", "ullrid", "qiongjiu", "tololo", "lenna"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "qiongjiu", "preferCommonKey": ["belka", "ullrid", "krolik", "sharkry"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "groza", "preferCommonKey": ["springfield", "suomi", "sabrina"], "preferStatus": {"defense_bonus": 3, "health_bonus": 3, "attack_bonus": 3}}
+{"id": "nagant", "preferCommonKey": ["ullrid", "belka", "vepley", "faye", "littara"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "nemesis", "preferCommonKey": ["ullrid", "belka", "mosin-nagant", "littara"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "nikketa", "preferCommonKey": ["ullrid", "belka", "vepley", "dushevnaya"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "daiyan", "preferCommonKey": ["belka", "faye", "vepley", "ullrid"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "dushevnaya", "preferCommonKey": ["ullrid", "belka", "vepley", "daiyan", "zhaohui", "jiangyu", "peritya", "sharkry", "lotta", "littara", "nemesis"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "lenna", "preferCommonKey": ["belka", "ullrid", "mechty"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "robella", "preferCommonKey": ["qiongjiu", "ullrid", "belka", "vepley", "jiangyu", "sharkry", "lotta"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "lotta", "preferCommonKey": ["ullrid", "belka", "vepley", "daiyan", "zhaohui", "jiangyu", "peritya"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "leva", "preferCommonKey": ["ullrid", "belka", "vepley", "dushevnaya", "jiangyu"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "littara", "preferCommonKey": ["ullrid", "belka", "peritya"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "makiatto", "preferCommonKey": ["belka", "qiongjiu", "mosin-nagant", "ullrid", "nemesis"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "mosin-nagant", "preferCommonKey": ["belka", "ullrid", "daiyan"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "mechty", "preferCommonKey": ["ullrid", "belka", "vepley", "littara"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "vepley", "preferCommonKey": ["belka", "faye", "peritya", "ullrid", "lotta"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "vector", "preferCommonKey": ["peritya", "krolik"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "belka", "preferCommonKey": ["zhaohui", "ullrid", "vepley", "sharkry"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "sabrina", "preferCommonKey": ["suomi", "nagant", "groza"], "preferStatus": {"defense_bonus": 3, "health_bonus": 3, "attack_bonus": 3}}
+{"id": "sharkry", "preferCommonKey": ["belka", "ullrid", "krolik"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "centaureissi", "preferCommonKey": ["ksenia", "cheeta", "colphne"], "preferStatus": {"defense_bonus": 3, "health_bonus": 3, "attack_bonus": 3}}
+{"id": "suomi", "preferCommonKey": ["sabrina", "makiatto"], "preferStatus": {"defense_bonus": 3, "health_bonus": 3, "attack_bonus": 3}}
+{"id": "springfield", "preferCommonKey": ["suomi", "cheeta", "colphne"], "preferStatus": {"defense_bonus": 3, "health_bonus": 3, "attack_bonus": 3}}
+{"id": "andoris", "preferCommonKey": ["suomi", "sabrina"], "preferStatus": {"defense_bonus": 3, "health_bonus": 3}}
+{"id": "ullrid", "preferCommonKey": ["belka", "faye", "vepley"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "yoohee", "preferCommonKey": ["ullrid", "vepley", "faye", "tololo"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "zhaohui", "preferCommonKey": ["belka", "ullrid", "vepley", "nagant"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "qiuhua", "preferCommonKey": ["ullrid", "belka", "krolik"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "cheeta", "preferCommonKey": ["centaureissi", "ksenia", "colphne"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "krolik", "preferCommonKey": ["ullrid", "belka", "vepley"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "colphne", "preferCommonKey": ["cheeta"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "ksenia", "preferCommonKey": ["centaureissi", "cheeta", "colphne"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "klukai", "preferCommonKey": ["belka", "tololo", "peritya", "ullrid", "dushevnaya", "vepley", "sharkry"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "tololo", "preferCommonKey": ["ullrid", "belka", "vepley", "daiyan", "sharkry", "nagant"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "papasha", "preferCommonKey": [], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "peri", "preferCommonKey": ["tololo", "sharkry", "krolik"], "preferStatus": {"crit_damage": 3, "health_bonus": 3, "attack_bonus": 3}}
+{"id": "peritya", "preferCommonKey": ["qiongjiu", "ullrid", "vepley", "nagant"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}
+{"id": "faye", "preferCommonKey": ["belka", "ullrid", "vepley", "littara"], "preferStatus": {"crit_damage": 3, "crit_rate": 3, "attack_bonus": 3}}

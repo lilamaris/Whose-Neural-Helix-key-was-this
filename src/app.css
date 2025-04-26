@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(98% 0 0);
+    --color-base-300: oklch(95% 0 0);
+    --color-base-content: oklch(21% 0.006 285.885);
+    --color-base-content-100: oklch(43% 0.006 285.885);
+    --color-base-content-200: oklch(86% 0.006 285.885);
+    --color-primary: oklch(58% 0.233 277.117);
+    --color-primary-content: oklch(93% 0.034 272.788);
+    --color-secondary: oklch(70% 0.183 293.541);
+    --color-secondary-content: oklch(94% 0.028 342.258);
+    --color-accent: oklch(77% 0.152 181.912);
+    --color-accent-content: oklch(38% 0.063 188.416);
+    --color-neutral: oklch(14% 0.005 285.823);
+    --color-neutral-content: oklch(92% 0.004 286.32);
+    --color-info: oklch(74% 0.16 232.661);
+    --color-info-content: oklch(29% 0.066 243.157);
+    --color-success: oklch(76% 0.177 163.223);
+    --color-success-content: oklch(37% 0.077 168.94);
+    --color-warning: oklch(82% 0.189 84.429);
+    --color-warning-content: oklch(41% 0.112 45.904);
+    --color-error: oklch(71% 0.194 13.428);
+    --color-error-content: oklch(27% 0.105 12.094);
+    --radius-selector: 0.5rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    --text-2xs: clamp(0.25rem, 0.162rem + 0.3756vw, 0.5rem);
+    --text-xs: clamp(0.5rem, 0.412rem + 0.3756vw, 0.75rem);
+    --text-s: clamp(0.75rem, 0.662rem + 0.3756vw, 1rem);
+    --text-m: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+    --text-l: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+    --text-xl: clamp(2rem, 1.4718rem + 2.2535vw, 3.5rem);
+    --text-2xl: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+    --text-3xl: clamp(4.0625rem, 2.8521rem + 5.1643vw, 7.5rem);
+}
+
+@layer base {
+    @variant dark {
+        --color-base-100: oklch(14% 0.005 285.823);
+        --color-base-200: oklch(21% 0.006 285.885);
+        --color-base-300: oklch(27% 0.006 286.033);
+        --color-base-content: oklch(96% 0.001 286.375);
+        --color-base-content-100: oklch(64% 0.001 286.375);
+        --color-base-content-200: oklch(32% 0.001 286.375);
+        --color-primary: oklch(58% 0.233 277.117);
+        --color-primary-content: oklch(100% 0 0);
+        --color-secondary: oklch(70% 0.183 293.541);
+        --color-secondary-content: oklch(98% 0.001 106.423);
+        --color-accent: oklch(77% 0.152 181.912);
+        --color-accent-content: oklch(97% 0.013 236.62);
+        --color-neutral: oklch(37% 0.013 285.805);
+        --color-neutral-content: oklch(98% 0 0);
+        --color-info: oklch(74% 0.16 232.661);
+        --color-info-content: oklch(29% 0.066 243.157);
+        --color-success: oklch(76% 0.177 163.223);
+        --color-success-content: oklch(37% 0.077 168.94);
+        --color-warning: oklch(82% 0.189 84.429);
+        --color-warning-content: oklch(41% 0.112 45.904);
+        --color-error: oklch(71% 0.194 13.428);
+        --color-error-content: oklch(27% 0.105 12.094);
+    }
+}
