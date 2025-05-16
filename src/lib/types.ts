@@ -93,17 +93,8 @@ export interface Doll {
     release: Release;
 }
 
-export interface DollUnit extends Pick<Doll, "id" | "name" | "rare" | "role" | "status"> {
-    assignedHelixes: NeuralHelixKey[];
-}
-
 export interface PreferHelixKey {
     id: string; // 대상 Doll의 Id
     preferCommonKey: string[]; // 추천 공용키의 Doll Id 배열
     preferStatus: Record<keyof DollStatus, number>; // 추천 결합키 보너스 수치
-}
-
-export interface Party {
-    id: number;
-    dolls: DollUnit[];
 }
