@@ -1,38 +1,8 @@
-# sv
+# 이 공용키 누구꺼였지?
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+턴제 전략 게임 `소녀전선 2:망명`에 등장하는 캐릭터들이 갖고 있는 뉴럴 헬릭스 키 정보를 모아놓은 웹 사이트입니다.
+[이 링크](https://gfl2.lilamaris.kr)에서 확인해볼 수 있습니다.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+# 사용한 기술
+- **프레임워크**: SvelteKit
+- **스타일링**: TailwindCSS
