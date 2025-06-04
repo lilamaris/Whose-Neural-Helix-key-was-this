@@ -1,0 +1,133 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+
+  moduleFormat           = "esm"
+  generatedFileExtension = "ts"
+  importFileExtension    = "ts"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Rare {
+  SSR
+  SR
+}
+
+enum Role {
+  SENTINEL
+  VANGUARD
+  SUPPORT
+  BULWARK
+}
+
+enum Attribute {
+  LIGHT_AMMO
+  MEDIUM_AMMO
+  HEAVY_AMMO
+  SHOTGUN_AMMO
+  MELEE
+  BURN
+  CORROSION
+  HYDRO
+  FREEZE
+  ELECTRIC
+}
+
+enum NeuralHelixType {
+  COMMON
+  COMMON_LOVE
+  EXTENSION
+  UNIQUE_201
+  UNIQUE_203
+  UNIQUE_401
+  UNIQUE_403
+  UNIQUE_601
+  UNIQUE_603
+}
+
+enum ReleaseCountry {
+  CN
+  KO
+}
+
+model Status {
+  id             Int   @id @default(autoincrement())
+  attack         Int   @default(0)
+  defense        Int   @default(0)
+  health         Int   @default(0)
+  stability      Int   @default(0)
+  criticalRate   Int   @default(0)
+  criticalDamage Int   @default(0)
+  attackBonus    Int   @default(0)
+  defenseBonus   Int   @default(0)
+  healthBonus    Int   @default(0)
+  mobility       Int   @default(0)
+  Doll           Doll?
+}
+
+model StatusBonus {
+  id             Int             @id @default(autoincrement())
+  attackBonus    Int             @default(0)
+  defenseBonus   Int             @default(0)
+  healthBonus    Int             @default(0)
+  criticalRate   Int             @default(0)
+  criticalDamage Int             @default(0)
+  neuralHelixKey NeuralHelixKey?
+}
+
+model NeuralHelixKey {
+  type          NeuralHelixType
+  isCommon      Boolean
+  name          String
+  description   String
+  doll          Doll            @relation(fields: [dollId], references: [id])
+  dollId        Int
+  statusBonus   StatusBonus?    @relation(fields: [statusBonusId], references: [id])
+  statusBonusId Int?            @unique()
+
+  @@id([dollId, type])
+}
+
+model Doll {
+  id            Int              @id @default(autoincrement())
+  ko_name       String
+  en_name       String
+  description   String
+  role          Role
+  rare          Rare
+  affinities    Attribute[]
+  weaknesses    Attribute[]
+  release       ReleaseCountry[]
+  status        Status           @relation(fields: [statusId], references: [id])
+  statusId      Int              @unique()
+  neuralHelixes NeuralHelixKey[]
+  opinion       Opinion          @relation(fields: [opinionId], references: [id])
+  opinionId     Int              @unique()
+}
+
+model Opinion {
+  id       Int       @id @default(autoincrement())
+  comments Comment[]
+  upvote   Int
+  downvote Int
+  Doll     Doll?
+}
+
+model Comment {
+  id           Int      @id @default(autoincrement())
+  createdAt    DateTime @default(now())
+  content      String
+  passwordHash String
+  Opinion      Opinion? @relation(fields: [opinionId], references: [id])
+  opinionId    Int?
+}
